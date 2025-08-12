@@ -34,6 +34,10 @@ export default class Rgb {
 			})
 		);
 	}
+
+	toCSS() {
+		return `rgb(${this.r},${this.g}, ${this.b})`;
+	}
 }
 
 function randomNumber(max, min = 0) {
