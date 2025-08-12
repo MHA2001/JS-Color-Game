@@ -1,7 +1,9 @@
 import Rgb from '/Rgb.js';
+import Hex from '/Hex.js';
 
 const COLOR_MAP = {
 	rgb: Rgb,
+	hex: Hex,
 };
 
 const DIFFICULTY_MAP = {
@@ -60,6 +62,7 @@ function generateColors({ format, difficulty }) {
 	for (let i = 0; i < 5; i++) {
 		colors.push(correctColor.generateSimilar(difficultyRules));
 	}
+	colors.forEach((c) => console.log(c.toCSS()));
 	return { colors, correctColor };
 }
 
