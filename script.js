@@ -1,9 +1,11 @@
 import Rgb from '/Rgb.js';
 import Hex from '/Hex.js';
+import Hsl from '/Hsl.js';
 
 const COLOR_MAP = {
 	rgb: Rgb,
 	hex: Hex,
+	hsl: Hsl,
 };
 
 const DIFFICULTY_MAP = {
