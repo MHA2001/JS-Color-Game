@@ -10,5 +10,5 @@ export default class Hex extends Rgb {
 }
 
 function decimalToHex(decimal) {
-	return decimal.toString(16);
+	return decimal.toString(16).padStart(2, '0');
 }
